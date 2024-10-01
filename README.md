@@ -1,4 +1,4 @@
-# Wireshark Network Traffic Analysis
+# Network Traffic and Port Scanning Analysis with Wireshark
 
 ## Project Overview
 In this project I focused on capturing and analyzing network traffic using Wireshark to better understand network protocols like HTTP and DNS.
