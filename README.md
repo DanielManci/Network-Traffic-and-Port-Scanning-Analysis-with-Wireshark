@@ -27,3 +27,21 @@ In this project I focused on capturing and analyzing network traffic using Wires
 This project gave me hands-on experience with network traffic analysis using Wireshark. I learned how to capture and analyze web traffic, as well as how to identify normal communication patterns. Understanding these basics is essential for detecting anomalies in network security.
 
 
+## Port Scanning with Nmap (Simulated Attack)
+
+### Overview:
+In this section, I simulated a port scanning attack using Nmap from my Kali Linux machine to probe the open/closed ports on my Ubuntu VM. Wireshark was used to capture the network traffic during the scan, including SYN and RST packets.
+
+### Steps:
+- Used Nmap from Kali to perform a SYN scan (sudo nmap -sS 10.0.2.15).
+- Captured the traffic on Wireshark running on the Ubuntu machine.
+
+### Analysis:
+- **SYN Packets**: Nmap attempted to open TCP connections by sending SYN packets.
+
+- **RST Packets**: Since the ports were closed, Ubuntu responded with RST packets, indicating no open ports.
+
+
+### Reflection:
+Port scanning is often used by attackers to gather information about the open services on a system. This reconnaissance technique helps attackers plan further intrusions. The SYN and RST traffic patterns seen in this project are typical of such scans.
+
